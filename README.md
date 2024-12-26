@@ -43,3 +43,21 @@ next 15.1.2
 react 19.0.0
 react-dom 19.0.0
 
+
+## コンポーネント設計(今日時点での：commit messageの自動化を試したかった。)
+components/
+└── ui/
+    ├── custome-ui/     # プロジェクト固有のUIコンポーネント
+    │   ├── atoms/      # 最小単位のコンポーネント
+    │   │   ├── Date/
+    │   │   ├── Layout/
+    │   │   └── PageInfo/   # ページ番号表示などの単純なUI
+    │   ├── molecules/  # atomsを組み合わせた中規模コンポーネント
+    │   │   └── Pagination/  # PageInfoとボタンを組み合わせたページネーション
+    │   └── organisms/  # 大規模な複合コンポーネント
+    │       └── AppSidebar/  # アプリケーション全体のサイドバー
+    │
+    └── shadcn-ui/     # 外部UIライブラリのカスタマイズコンポーネント
+        ├── button.tsx
+        ├── input.tsx
+        └── ...
