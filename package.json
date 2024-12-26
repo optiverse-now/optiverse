@@ -27,6 +27,7 @@
   "devDependencies": {
     "@eslint/eslintrc": "^3",
     "@hono/node-server": "^1.13.7",
+    "@storybook/react": "^8.4.7",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
