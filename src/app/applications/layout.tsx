@@ -1,4 +1,4 @@
-import { AppSidebar } from "@/app/components/ui/custome-ui/molecules/app-sidebar"
+import { AppSidebar } from "@/app/components/ui/custome-ui/organisms/AppSidebar/app-sidebar"
 import { SidebarProvider } from "@/app/components/ui/shadcn-ui/sidebar"
 
 export default function ApplicationsLayout({
