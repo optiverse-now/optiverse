@@ -1,0 +1,84 @@
+@import 'styles/variables.module';
+
+.button {
+  @include disabled();
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  font-weight: 700;
+  line-height: 1.2;
+  transition: $transition;
+}
+
+/* shape */
+.square {
+  border-radius: 5px;
+}
+
+.round {
+  border-radius: 80px;
+}
+
+/* align */
+.left {
+  justify-content: flex-start;
+}
+
+.center {
+  justify-content: center;
+}
+
+.right {
+  justify-content: flex-end;
+}
+
+.primary {
+  background: $primary;
+}
+
+.tertiary {
+  background: $tertiary;
+  box-shadow: 0 3px 0 0 #82c390;
+}
+
+.tertiary-light {
+  background: $tertiary-light;
+  box-shadow: 0 2px 0 0 #82c390;
+}
+
+.blue-green {
+  background: $blue-green;
+}
+
+/* text color */
+.black {
+  color: $black;
+}
+
+.white {
+  color: $white;
+}
+
+/* size */
+.small {
+  font-size: 12px;
+  font-weight: 700;
+  padding: 4px 7px;
+}
+
+.medium {
+  font-size: 14px;
+  font-weight: 700;
+  padding: 7px 13px;
+}
+
+.large {
+  font-size: 24px;
+  font-weight: 700;
+  padding: 24px 32px;
+  width: 100%;
+}
+
+.label {
+  white-space: nowrap;
+}

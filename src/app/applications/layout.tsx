@@ -1,6 +1,6 @@
-import { AppSidebar } from "@/app/components/ui/custome-ui/organisms/AppSidebar/app-sidebar"
-import { SidebarProvider } from "@/app/components/ui/shadcn-ui/sidebar"
-
+import { AppSidebar } from "@/app/components/ui/organisms/AppSidebar/AppSidebar"
+import { SidebarProvider } from "@/app/components/ui/organisms/Sidebar"
+import { Home, Book } from "lucide-react"
 export default function ApplicationsLayout({
   children,
 }: {
@@ -8,7 +8,13 @@ export default function ApplicationsLayout({
 }) {
   return (
     <SidebarProvider>
-      <AppSidebar />
+      <AppSidebar 
+        title="Life Platform" 
+        items={[
+          { title: "Home", url: "/applications/home", icon: Home },
+          { title: "Diary", url: "/applications/diary", icon: Book },
+        ]}
+      />
       <main>{children}</main>
     </SidebarProvider>
   )
